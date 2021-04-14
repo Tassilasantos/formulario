@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <title>Cadastro</title>
+    <style>
+        body{
+            background-color: rgb(228, 221, 235);
+        }
+    </style>
+</head>
+<body>
+    <div> 
+        <h1 id="titulo">Cadastro bimestral
+            <p id="subtitulos">Informe seus dados abaixo &darr;</p>
+        </h1>
+        <br>
+    </div>
+    <form action=""> 
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="">Nome:</label>
+                <input type="text" name="Nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="">Sobrenome</label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required> 
+            </div>
+            <div class="campo">
+                <label for="">CPF:</label>
+                <input type="text" name="CPF" id="CPF" required>
+
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="">email</label>
+            <input type="text" name="email" id="email" required>
+        </div>
+            <div class="campo">
+            <label for="">Genero:</label>
+            <input type="radio" name="Feminino" value="Feminino" >Feminino
+            <label for=""></label>
+            <input type="radio" name="Masculino" value="Masculino">Masculino
+         </div>
+         <div>
+             <label for="">Polo:</label>
+             <select id="Polo">
+             <option selected disabled value="">Selecione</option>
+                 <option>Recife</option>
+                 <option>Igarassu</option>
+                 <option>Paulista</option>
+                 <option>Olinda</option> 
+                 
+             </select>   
+         </div>
+         <fieldset> 
+             <div id="check">
+                 <label for="">Selecione as materias eletivas: <br> </label>
+                 <input type="checkbox" id="materia1" name="material" value="Direito">
+                 <label for="materia1">Direito</label>
+                 <input type="checkbox" id="materia2" name="materia2" value="Hardware">
+                 <label for="materia2">Hardware</label>
+                 <input type="checkbox" id="materia3" name="materia3" value="Algoritmo">
+                 <label for="materia3">Algoritmo</label>
+                 <input type="checkbox" id="materia4" name="materia4" value="Sistema da informação">
+                 <label for="materia4">Sistema da informação</label>
+             </div>
+             <div>
+                 <button type="submit">Concluido</button>
+             </div>
+         </fieldset>
+         
+    </form>
+</body>
+</html>
